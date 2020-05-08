@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat(script: 'mvn --version', returnStatus: true, returnStdout: true)
+        bat(script: 'mvn -version', returnStatus: true, returnStdout: true)
       }
     }
 
